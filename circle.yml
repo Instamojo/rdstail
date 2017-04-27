@@ -12,7 +12,7 @@ dependencies:
 
 test:
   override:
-      - docker build -t $CIRCLE_PROJECT_REPONAME:latest .
+      - docker build --rm=false -t $CIRCLE_PROJECT_REPONAME:latest .
 
 deployment:
   hub:

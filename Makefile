@@ -13,4 +13,4 @@ test: lint
 
 build: test
 	echo "compiling with `go version`"
-	CGO_ENABLED=0 GOOS=$(GOOS) go build -a -installsuffix cgo -o $(GOPATH)/src/github.com/Instamojo/rdstail/rdstail github.com/Instamojo/rdatail
+	CGO_ENABLED=0 GOOS=$(GOOS) go build -a -installsuffix cgo -o $(GOPATH)/src/github.com/Instamojo/rdstail/rdstail github.com/Instamojo/rdstail

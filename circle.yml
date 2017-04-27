@@ -13,3 +13,9 @@ dependencies:
 test:
   override:
       - echo "Tests are run as part of 'make build'."
+
+deployment:
+  publish:
+    branch: /.*/
+    commands:
+      - docker build -t $CIRCLE_PROJECT_REPONAME:latest .

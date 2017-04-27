@@ -12,10 +12,10 @@ dependencies:
 
 test:
   override:
-      - echo "Tests are run as part of 'make build'."
+      - docker build -t $CIRCLE_PROJECT_REPONAME:latest .
 
 deployment:
-  publish:
-    branch: /.*/
+  hub:
+    tag: /.*/
     commands:
-      - docker build -t $CIRCLE_PROJECT_REPONAME:latest .
+        - echo "Will push to Docker Hub"

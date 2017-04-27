@@ -13,9 +13,3 @@ dependencies:
 test:
   override:
       - docker build --rm=false -t $CIRCLE_PROJECT_REPONAME:latest .
-
-deployment:
-  hub:
-    tag: /.*/
-    commands:
-        - echo "Will push to Docker Hub"

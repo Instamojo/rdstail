@@ -1,4 +1,4 @@
-RDSTail
+RDSTail [![CircleCI](https://circleci.com/gh/Instamojo/rdstail/tree/master.svg?style=svg)](https://circleci.com/gh/Instamojo/rdstail/tree/master)
 =======
 
 RDSTail is a tool for tailing or streaming RDS log files.  Supports piping to papertrail.

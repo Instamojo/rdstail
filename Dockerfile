@@ -12,7 +12,7 @@ RUN apk --no-cache add ca-certificates
 RUN update-ca-certificates
 
 # Copy the binary from build image
-COPY --from=builder /go/src/github.com/Instamojo/rdstail .
+COPY --from=builder /go/src/github.com/Instamojo/rdstail/rdstail .
 
 # Do not run as root.
 USER nobody
